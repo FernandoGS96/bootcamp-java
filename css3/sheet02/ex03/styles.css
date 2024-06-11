@@ -1,0 +1,10 @@
+div{
+    justify-content: center;
+}
+.sidebar{
+    position:fixed;
+}
+
+.main-content{
+    display: flex;
+}
