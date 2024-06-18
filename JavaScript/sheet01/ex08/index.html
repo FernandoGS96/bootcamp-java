@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const persona = {
+    nombre: "Frenando",
+    edad: 28,
+    ciudad: "Málaga"
+    };
+    console.log(Object.values(persona)
+    /* "Nombre: ",persona.nombre,", Edad: ",persona.edad,", Ciudad:",persona.ciudad */);
+    let characters = {
+        "Gallager": {
+            nombre: "Gallager",
+            via: "Abundancia",
+            elemento: "Fuego"
+        },
+        "Robin": {
+            nombre: "Robin",
+            via: "Armonia",
+            elemento: "Fisico"
+        },
+        "Kafka": {
+            nombre: "Kafka",
+            via: "Nihilidad",
+            elemento: "Electrico"
+        },
+    }
+    function describirPersona(x){
+        if (characters[x])
+            console.log(Object.values(characters[x]))
+        else
+            console.log("El personaje no existe")
+    }
+    
+    describirPersona(prompt("a"));
+    </script>
+</body>
+</html>
