@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="main.js"></script>
+    <form id="formulario">
+        <label for="pass">Contraseña</label><br>
+        <input type="password" id="pass" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+        <label for="cpass">Confirmar Contraseña</label><br>
+        <input type="password" id="cpass" name="cpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br><br>
+        <input onclick="validacion()" type="submit" value="Submit">
+
+        <p id="demo"></p>
+      </form>
+</body>
+</html>
