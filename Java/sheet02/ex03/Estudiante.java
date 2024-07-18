@@ -1,3 +1,5 @@
+package sheet02.ex03;
+
 public class Estudiante extends Persona{
     
     private String grado;
@@ -5,7 +7,6 @@ public class Estudiante extends Persona{
 
     @Override public void mostrarDetalles(){
 
-        super.mostrarDetalles();
         System.out.println("Grado: " + grado);
 
     }
@@ -19,7 +20,7 @@ public class Estudiante extends Persona{
 }
     public static void main(String[] args) {
 
-        Persona p1 = new Estudiante("Juan", 34, "suidbh");
+        Persona p1 = new Persona(grado, edad);
 
         p1.setNombre("Ana");
         p1.setEdad(20);
